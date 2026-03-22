@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OshiTimer - Support</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #1C1C1E; color: #fff; line-height: 1.8; padding: 40px 20px; }
+  .container { max-width: 700px; margin: 0 auto; text-align: center; }
+  h1 { font-size: 36px; margin-bottom: 8px; }
+  .tagline { color: rgba(255,255,255,0.5); font-size: 18px; margin-bottom: 48px; }
+  .features { text-align: left; margin-bottom: 48px; }
+  h2 { font-size: 20px; color: #FF6B9D; margin-bottom: 16px; }
+  .feature-list { list-style: none; padding: 0; }
+  .feature-list li { padding: 8px 0; color: rgba(255,255,255,0.8); }
+  .feature-list li::before { content: "♡ "; color: #FF6B9D; }
+  .support-section { background: #2C2C2E; border-radius: 16px; padding: 32px; margin-bottom: 32px; text-align: left; }
+  .support-section h2 { margin-top: 0; }
+  .support-section p { color: rgba(255,255,255,0.7); }
+  a { color: #FF6B9D; }
+  .links { margin-top: 32px; }
+  .links a { display: inline-block; margin: 0 12px; }
+  .lang-switch { text-align: right; margin-bottom: 20px; }
+  .lang-switch a { margin-left: 12px; text-decoration: none; color: #FF6B9D; }
+  .en { display: none; }
+</style>
+<script>
+function switchLang(lang) {
+  document.querySelectorAll('.ja').forEach(el => el.style.display = lang === 'ja' ? '' : 'none');
+  document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="lang-switch">
+    <a href="#" onclick="switchLang('ja'); return false;">日本語</a>
+    <a href="#" onclick="switchLang('en'); return false;">English</a>
+  </div>
+
+  <!-- 日本語 -->
+  <div class="ja">
+    <h1>OshiTimer</h1>
+    <p class="tagline">推しに会える日までカウントダウン</p>
+
+    <div class="features">
+      <h2>機能</h2>
+      <ul class="feature-list">
+        <li>カウントダウン＆カウントアップ</li>
+        <li>写真やカラーで背景をカスタマイズ</li>
+        <li>ホーム画面＆ロック画面ウィジェット</li>
+        <li>ライブアクティビティ（Dynamic Island対応）</li>
+        <li>リマインダー通知</li>
+        <li>SNSシェア</li>
+        <li>10言語対応</li>
+      </ul>
+    </div>
+
+    <div class="support-section">
+      <h2>サポート</h2>
+      <p>不具合の報告や機能のご要望など、お気軽にご連絡ください。</p>
+      <p style="margin-top: 16px;">メール: <a href="mailto:koakchan.dev@gmail.com">koakchan.dev@gmail.com</a></p>
+    </div>
+
+    <div class="support-section">
+      <h2>よくある質問</h2>
+      <p><strong>Q: ウィジェットの追加方法は？</strong></p>
+      <p>ホーム画面を長押し → 左上の「+」をタップ →「OshiTimer」を検索して追加してください。</p>
+      <p style="margin-top: 12px;"><strong>Q: ライブアクティビティが表示されない</strong></p>
+      <p>設定アプリ → OshiTimer → ライブアクティビティが有効になっているか確認してください。</p>
+      <p style="margin-top: 12px;"><strong>Q: 広告を消すには？</strong></p>
+      <p>アプリ内の広告バナー横の「×」ボタンから広告削除（¥200）を購入できます。</p>
+    </div>
+
+    <div class="links">
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div class="en">
+    <h1>OshiTimer</h1>
+    <p class="tagline">Countdown to the day you see your oshi</p>
+
+    <div class="features">
+      <h2>Features</h2>
+      <ul class="feature-list">
+        <li>Countdown & Count-up timers</li>
+        <li>Customize backgrounds with photos or colors</li>
+        <li>Home screen & Lock screen widgets</li>
+        <li>Live Activity (Dynamic Island support)</li>
+        <li>Reminder notifications</li>
+        <li>Social sharing</li>
+        <li>10 languages supported</li>
+      </ul>
+    </div>
+
+    <div class="support-section">
+      <h2>Support</h2>
+      <p>Feel free to contact us for bug reports or feature requests.</p>
+      <p style="margin-top: 16px;">Email: <a href="mailto:koakchan.dev@gmail.com">koakchan.dev@gmail.com</a></p>
+    </div>
+
+    <div class="support-section">
+      <h2>FAQ</h2>
+      <p><strong>Q: How do I add a widget?</strong></p>
+      <p>Long-press your Home Screen → tap "+" in the top left → search "OshiTimer" and add it.</p>
+      <p style="margin-top: 12px;"><strong>Q: Live Activity is not showing</strong></p>
+      <p>Go to Settings → OshiTimer → make sure Live Activities is enabled.</p>
+      <p style="margin-top: 12px;"><strong>Q: How do I remove ads?</strong></p>
+      <p>Tap the "×" button next to the ad banner to purchase ad removal (¥200).</p>
+    </div>
+
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
