@@ -23,6 +23,11 @@ function switchLang(lang) {
   document.querySelectorAll('.ja').forEach(el => el.style.display = lang === 'ja' ? '' : 'none');
   document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
 }
+window.addEventListener('DOMContentLoaded', function() {
+  var params = new URLSearchParams(window.location.search);
+  var lang = params.get('lang') || (navigator.language.startsWith('ja') ? 'ja' : 'en');
+  switchLang(lang);
+});
 </script>
 </head>
 <body>
